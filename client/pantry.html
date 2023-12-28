@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lolas Kitchen</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>Lola's Kitchen</h1>
+            <div class="button-container">
+            <div class="button">
+            <a href="fridge.html">
+                <button id="fridge-button">My Fridge</button>
+            </a>
+            </div>
+            <div class="button">
+            <a href="pantry.html">
+                <button id="pantry-button">My Pantry</button>
+            </a>
+            </div>
+            <div class="button">
+            <a href="myrecipes.html">
+                <button id="recipes-button">My Recipes</button>
+            </a>
+            </div>
+            <div class="button">
+            <a href="addrecipes.html">
+                <button id="add-recipes-button">Add Recipes</button>
+            </a>
+            </div>
+            <div class="button">
+            <a href="grocerylist.html">
+                <button id="grocery-list-button">Grocery List</button>
+            </a>
+            </div>
+            </div>
+        </header>
+        
+        <main>
+            <h1>My Pantry</h1>
+            <form>
+                
+                <label for="pantry-select">Search Pantry:</label>
+                <select id="pantry-select"></select>
+
+                <button id="pantry-add">Add</button>
+            </form>
+            <secton id="selected-ingredients"></secton>
+        </main>
+
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
